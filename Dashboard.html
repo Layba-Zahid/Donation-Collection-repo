@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+     <link href="style.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top  solid-nav">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" width="120" alt="Logo">
+    </a>
+
+    
+    <!-- HAMBURGER BUTTON -->
+<button class="navbar-toggler" type="button"
+  data-bs-toggle="offcanvas"
+  data-bs-target="#mobileMenu">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
+    <!-- COLLAPSIBLE LINKS -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Donation.html">Causes</a></li>
+        <li class="nav-item"><a class="nav-link" href="NeedyContacts.html">Contacts</a></li>
+        <li class="nav-item"><a class="nav-link" href="DonationGiver.html">Donors</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="Dashboard.html">Dashboard</a></li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+<div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="mobileMenu">
+
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">
+      <img src="logo.png" width="100">
+    </h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav gap-2">
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="index.html">
+          <i class="bi bi-house me-2"></i> Home
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="Donation.html">
+          <i class="bi bi-heart me-2"></i> Causes
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="NeedyContacts.html">
+          <i class="bi bi-people me-2"></i> Contacts
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="DonationGiver.html">
+          <i class="bi bi-cash-coin me-2"></i> Donors
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="About.html">
+          <i class="bi bi-info-circle me-2"></i> About
+        </a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link text-white" href="Dashboard.html">
+          <i class="bi bi-info-circle me-2"></i> Dashboard
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+    <div class="container dashboard-donationcauses my-5">
+    <h2 class="head text-center mb-3">Dashboard</h2>
+    <p class="text-center text-muted mb-4">Welcome back! Here's an overview of your donation platform.</p>
+    
+    
+
+<div class="container my-4">
+  <div class="row g-4">
+    
+    <!-- Card 1 -->
+    <div class="col-md-6">
+      <div class="card total-raised shadow-sm">
+        <div class="card-body d-flex align-items-center gap-3">
+          <div class="index-icon fs-2 text-success">
+            <i class="bi bi-bullseye"></i>
+          </div>
+          <div class="raised-main">
+            <p class="raised-small mb-1">Total Raised</p>
+            <p class="raised-heading fw-bold fs-4 mb-1">Rs 2,417,000</p>
+            <p class="raised-text  mb-0">↑ 23% from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-6">
+      <div class="card total-raised2 shadow-sm">
+        <div class="card-body d-flex align-items-center gap-3">
+          <div class="index-icon fs-2 text-primary">
+            <i class="bi bi-flag"></i>
+          </div>
+          <div class="raised-main">
+            <p class="raised-small2 mb-1">Active Causes</p>
+            <p class="raised-heading2 fw-bold fs-4 mb-1">8</p>
+            <p class="raised-text2 text-success mb-0">↑ 10% from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-6">
+      <div class="card total-raised2 shadow-sm">
+        <div class="card-body d-flex align-items-center gap-3">
+          <div class="index-icon fs-2 text-warning">
+            <i class="bi bi-people"></i>
+          </div>
+          <div class="raised-main">
+            <p class="raised-small2 mb-1">Total Donors</p>
+            <p class="raised-heading2 fw-bold fs-4 mb-1">220</p>
+            <p class="raised-text2 text-success mb-0">↑ 15% from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-6">
+      <div class="card total-raised3 shadow-sm">
+        <div class="card-body d-flex align-items-center gap-3">
+          <div class="index-icon fs-2 text-danger">
+            <i class="bi bi-exclamation-triangle"></i>
+          </div>
+          <div class="raised-main">
+            <p class="raised-small mb-1">Urgent Causes</p>
+            <p class="raised-heading fw-bold fs-4 mb-1">2</p>
+            <p class="raised-text  mb-0">↑ 50% from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+
+  <div class="container my-4 main-contant">
+    <h2 class="head text-center mb-3">Donation Causes</h2>
+    <p class="text-center text-muted mb-4">Browse and support causes that need your help</p>
+
+    <div class=" container-fluid dashboard-causes my-4">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card cardd h-100 shadow-sm ">
+        <img src="baby.jpg" class="card-img-top" alt="">
+        <div class="card-body d-flex flex-column">
+
+          <h5 class="card-title">Emergency Heart Surgery for Baby</h5>
+          <p class="card-text">6-month-old Ayesha needs urgent heart surgery. Every moment counts.</p>
+
+          <div class="d-flex justify-content-between mb-1">
+            <small>Raised: Rs 60,000</small>
+            <small>Goal: Rs 100,000</small>
+          </div>
+
+          <div class="progress mb-3" style="height: 8px;">
+            <div class="progress-bar bg-success" style="width: 60%"></div>
+          </div>
+
+          <div class="mt-auto d-flex justify-content-between">
+            <a href="#" class="btn btn-outline-success btn-sm "
+              data-bs-toggle="modal"
+          data-bs-target="#donationModal1"
+            >View Details</a>
+            <a href="#" class="btn btn-success btn-sm ">Donate Now</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    
+    <div class="col-md-4">
+      <div class="card cardd h-100">
+        <img src="book.jpg" class="card-img-top" alt="">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Orphan Education Support</h5>
+          <p class="card-text">Help 50 orphaned children continue their education in Karachi.</p>
+
+          <div class="d-flex justify-content-between mb-1">
+            <small>Raised: Rs 275,000</small>
+            <small>Goal: Rs 500,000</small>
+          </div>
+
+          <div class="progress mb-3" style="height: 8px;">
+            <div class="progress-bar bg-success" style="width: 60%"></div>
+          </div>
+
+          <div class=" mt-auto d-flex justify-content-between">
+            <a href="#" class="btn btn-outline-success btn-sm" 
+             data-bs-toggle="modal"
+          data-bs-target="#donationModal2"
+            >View Details</a>
+            <a href="#" class="btn btn-success btn-sm">Donate Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card cardd h-100">
+        <img src="flood.jpg" class="card-img-top" alt="">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Flood Relief for Sindh Villages</h5>
+          <p class="card-text">  Providing food, shelter, and medical aid to flood-affected families.</p>
+
+          <div class="d-flex justify-content-between mb-1">
+            <small>Raised: Rs 89,000</small>
+            <small>Goal: Rs 1,120,000</small>
+          </div>
+
+          <div class="progress mb-3" style="height: 8px;">
+            <div class="progress-bar bg-success" style="width: 60%"></div>
+          </div>
+
+          <div class= " mt-auto d-flex justify-content-between">
+            <a href="#" class="btn btn-outline-success btn-sm"
+              data-bs-toggle="modal"
+          data-bs-target="#donationModal3"
+            >View Details</a>
+            <a href="#" class="btn btn-success btn-sm">Donate Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="card border shadow-sm mt-4 box1 dashboard-box1">
+
+  <div class="card-header1 bg-white text-center">
+    Recent Activity
+  </div>
+
+  <ul class="list-group list-group-flush recent-activity">
+    <li class="list-group-item">
+      <span class="badge bg-success me-2">Donation</span>
+      Ahmed Khan donated <strong>Rs 50,000</strong>
+      <div class="text-muted small">6 Jan 2026</div>
+    </li>
+    <li class="list-group-item">
+      <span class="badge bg-primary me-2">Needy</span>
+      New needy contact added
+      <div class="text-muted small">5 Jan 2026</div>
+    </li>
+     <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div>
+        <span class="badge bg-warning text-dark me-2">Monthly</span>
+        Sarah M. started monthly donation
+        <div class="text-muted small">5 Jan 2026</div>
+      </div>
+    </li>
+     <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div>
+        <span class="badge bg-danger me-2">Urgent</span>
+        Medical case marked urgent
+        <div class="text-muted small">4 Jan 2026</div>
+      </div>
+    </li>
+  </ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container my-4 box2">
+  <div class="row g-3">
+
+    <!-- BOX 1 : Needy Contacts -->
+    <div class="col-md-6">
+      <div class="card dashboard-box2 shadow-sm h-100">
+        <div class="card-header dashboard-header2">
+          Needy Contacts
+        </div>
+
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table table-striped border align-middle dashboard-table">
+              <thead>
+                <tr>
+                  <th class="py-3">Name</th>
+                  <th>Category</th>
+                  <th>City</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="py-3">Ali Khan</th>
+                  <td><span class="badge baj1">Medical</span></td>
+                  <td>Lahore</td>
+                  <td><span class="badge bg-success">Verified</span></td>
+                </tr>
+                <tr>
+                  <th class="py-3">Fatima Noor</th>
+                  <td><span class="badge baj1">Education</span></td>
+                  <td>Karachi</td>
+                  <td><span class="badge bg-success">Verified</span></td>
+                </tr>
+                <tr>
+                  <th class="py-3">Ahmed Raza</th>
+                  <td><span class="badge baj1">Emergency</span></td>
+                  <td>Multan</td>
+                  <td><span class="badge bg-success">Verified</span></td>
+                </tr>
+                <tr>
+                  <th class="py-3">Ayesha Malik</th>
+                  <td><span class="badge baj1">Medical</span></td>
+                  <td>Islamabad</td>
+                  <td><span class="badge bg-success">Verified</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOX 2 : Donation Givers -->
+    <div class="col-md-6">
+      <div class="card dashboard-box shadow-sm h-100">
+        <div class="card-header dashboard-header2">
+          Donation Givers
+        </div>
+
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table table-striped border align-middle dashboard-table">
+              <thead>
+                <tr>
+                  <th class="py-3">Donor</th>
+                  <th>Amount</th>
+                  <th>Type</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="py-3">Ahmed Khan</th>
+                  <td class="rs">Rs 50,000</td>
+                  <td><span class="badge baj1">One-time</span></td>
+                  <td>6 Jan 2026</td>
+                </tr>
+                <tr>
+                  <th class="py-3">Sarah M.</th>
+                  <td class="rs">Rs 10,000</td>
+                  <td><span class="badge baj1">Monthly</span></td>
+                  <td>5 Jan 2026</td>
+                </tr>
+                <tr>
+                  <th class="py-3">Anonymous</th>
+                  <td class="rs">Rs 25,000</td>
+                  <td><span class="badge baj1">One-time</span></td>
+                  <td>2 Jan 2026</td>
+                </tr>
+                <tr>
+                  <th class="py-3">Bilal Ahmad</th>
+                  <td class="rs">Rs 60,000</td>
+                  <td><span class="badge baj1">One-time</span></td>
+                  <td>6 Jan 2026</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!--footer --> 
+<footer class="footer-section">
+  <div class="container py-5">
+    <div class="row gy-4">
+
+      <!-- LOGO & ABOUT -->
+      <div class="col-md-3">
+        <img src="logo.png" alt="HopeGive Logo" class="footer-logo-img">
+
+        <p class="footer-text">
+          Connecting generous hearts with those in need. Every contribution makes a difference.
+        </p>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-md-3">
+        <h6 class="footer-title">Quick Links</h6>
+        <ul class="footer-links list-unstyled">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Donation Causes</a></li>
+          <li><a href="#">Needy Contacts</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-md-3">
+        <h6 class="footer-title">Contact Us</h6>
+        <ul class="footer-contact list-unstyled">
+          <li><i class="bi bi-envelope"></i> info@hopegive.org</li>
+          <li><i class="bi bi-telephone"></i> +92 324-9351851</li>
+          <li><i class="bi bi-geo-alt"></i> Lahore, Pakistan</li>
+        </ul>
+      </div>
+
+      <!-- DEVELOPED BY -->
+      <div class="col-md-3">
+        <h6 class="footer-title">Developed By</h6>
+        <div class="dev-box">
+          <h6 class="text-success mb-1">U Devs</h6>
+          <p class="mb-0">
+            Building innovative solutions for a better tomorrow.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="footer-line">
+
+    <p class="footer-bottom text-center mb-0">
+      © 2026 HopeGive. All rights reserved.
+      Developed with <span class="text-danger">♥</span> by
+      <span class="text-success">U Devs</span>
+    </p>
+  </div>
+</footer>
+
+
+
+ 
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>

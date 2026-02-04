@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Causes</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+       <link href="style.css" rel="stylesheet">
+      </head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top  solid-nav">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" width="120" alt="Logo">
+    </a>
+
+    
+    <!-- HAMBURGER BUTTON -->
+<button class="navbar-toggler" type="button"
+  data-bs-toggle="offcanvas"
+  data-bs-target="#mobileMenu">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
+    <!-- COLLAPSIBLE LINKS -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Donation.html">Causes</a></li>
+        <li class="nav-item"><a class="nav-link" href="NeedyContacts.html">Contacts</a></li>
+        <li class="nav-item"><a class="nav-link" href="DonationGiver.html">Donors</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="Dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+<div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="mobileMenu">
+
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">
+      <img src="logo.png" width="100">
+    </h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav gap-2">
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="index.html">
+          <i class="bi bi-house me-2"></i> Home
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="Donation.html">
+          <i class="bi bi-heart me-2"></i> Causes
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="NeedyContacts.html">
+          <i class="bi bi-people me-2"></i> Contacts
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="DonationGiver.html">
+          <i class="bi bi-cash-coin me-2"></i> Donors
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="About.html">
+          <i class="bi bi-info-circle me-2"></i> About
+        </a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link text-white" href="Dashboard.html">
+          <i class="bi bi-info-circle me-2"></i> Dashboard
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <div class="container my-4 main-contant">
+    <h2 class="head text-center mb-3">Donation Causes</h2>
+    <p class="text-center text-muted mb-4">Browse and support causes that need your help</p>
+
+
+<div class="d-flex flex-wrap justify-content-center align-items-center mb-4 ">
+  <!-- Search Bar -->
+  <div class="flex-grow-0 me-5" style="min-width: 480px;">
+    <input class="form-control ms-3" list="datalistOptions" placeholder="Search Causes...">
+    <datalist id="datalistOptions">
+      <option value="Medical">
+      <option value="Education">
+      <option value="Emergency">
+      <option value="Infrastructure">
+      <option value="All">
+    </datalist>
+  </div>
+
+  <!-- Category Buttons -->
+    <div class="d-flex flex-wrap">
+    <button class="btn btn-success me-2 mb-2" data-bs-toggle="collapse" data-bs-target="#all">All</button>
+  <button class="btn btn-success me-2 mb-2" data-bs-toggle="collapse" data-bs-target="#medical">Medical</button>
+  <button class="btn btn-success me-2 mb-2" data-bs-toggle="collapse" data-bs-target="#education">Education</button>
+  <button class="btn btn-success me-2 mb-2" data-bs-toggle="collapse" data-bs-target="#emergency">Emergency</button>
+  <button class="btn btn-success me-2 mb-2" data-bs-toggle="collapse" data-bs-target="#infra">Infrastructure</button>
+</div>
+</div>
+
+
+<div class="container my-4">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card cardd h-100 shadow-sm ">
+        <img src="baby.jpg" class="card-img-top" alt="">
+        <div class="card-body d-flex flex-column">
+
+          <h5 class="card-title">Emergency Heart Surgery for Baby</h5>
+          <p class="card-text">6-month-old Ayesha needs urgent heart surgery. Every moment counts.</p>
+
+          <div class="d-flex justify-content-between mb-1">
+            <small>Raised: Rs 60,000</small>
+            <small>Goal: Rs 100,000</small>
+          </div>
+
+          <div class="progress mb-3" style="height: 8px;">
+            <div class="progress-bar bg-success" style="width: 60%"></div>
+          </div>
+
+          <div class="mt-auto d-flex justify-content-between">
+            <a href="#" class="btn btn-outline-success btn-sm "
+              data-bs-toggle="modal"
+          data-bs-target="#donationModal1"
+            >View Details</a>
+            <a href="#" class="btn btn-success btn-sm ">Donate Now</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    
+    <div class="col-md-4">
+      <div class="card cardd h-100">
+        <img src="book.jpg" class="card-img-top" alt="">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Orphan Education Support</h5>
+          <p class="card-text">Help 50 orphaned children continue their education in Karachi.</p>
+
+          <div class="d-flex justify-content-between mb-1">
+            <small>Raised: Rs 275,000</small>
+            <small>Goal: Rs 500,000</small>
+          </div>
+
+          <div class="progress mb-3" style="height: 8px;">
+            <div class="progress-bar bg-success" style="width: 60%"></div>
+          </div>
+
+          <div class=" mt-auto d-flex justify-content-between">
+            <a href="#" class="btn btn-outline-success btn-sm" 
+             data-bs-toggle="modal"
+          data-bs-target="#donationModal2"
+            >View Details</a>
+            <a href="#" class="btn btn-success btn-sm">Donate Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card cardd h-100">
+        <img src="flood.jpg" class="card-img-top" alt="">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Flood Relief for Sindh Villages</h5>
+          <p class="card-text">  Providing food, shelter, and medical aid to flood-affected families.</p>
+
+          <div class="d-flex justify-content-between mb-1">
+            <small>Raised: Rs 89,000</small>
+            <small>Goal: Rs 1,120,000</small>
+          </div>
+
+          <div class="progress mb-3" style="height: 8px;">
+            <div class="progress-bar bg-success" style="width: 60%"></div>
+          </div>
+
+          <div class= " mt-auto d-flex justify-content-between">
+            <a href="#" class="btn btn-outline-success btn-sm"
+              data-bs-toggle="modal"
+          data-bs-target="#donationModal3"
+            >View Details</a>
+            <a href="#" class="btn btn-success btn-sm">Donate Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 4 -->
+
+ <div class="col-md-4">
+      <div class="card cardd h-100">
+        <img src="wheel chair.jpeg"  class="card-img-top" alt="">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Wheelchair for Disabled Veteran</h5>
+          <p class="card-text">Army veteran needs an electric wheelchair for mobility.</p>
+
+          <div class="d-flex justify-content-between mb-1">
+            <small>Raised: Rs 80,000</small>
+            <small>Goal: Rs 180,000</small>
+          </div>
+
+          <div class="progress mb-3" style="height: 8px;">
+            <div class="progress-bar bg-success" style="width: 60%"></div>
+          </div>
+
+          <div class= " mt-auto d-flex justify-content-between">
+            <a href="#" class="btn btn-outline-success btn-sm"
+              data-bs-toggle="modal"
+          data-bs-target="#donationModal4"
+            >View Details</a>
+            <a href="#" class="btn btn-success btn-sm">Donate Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <!-- card 5 -->
+
+    <div class="col-md-4">
+  <div class="card cardd h-100">
+    <img src="water.jpeg" height="266px" class="card-img-top" alt="">
+
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title">Clean Water Well for Thar Village</h5>
+
+      <p class="card-text">
+       Building a deep well to provide clean water for 200+ families.
+      </p>
+
+      <div class="d-flex justify-content-between mb-1">
+        <small>Raised: Rs 60,000</small>
+        <small>Goal: Rs 100,000</small>
+      </div>
+
+      <div class="progress mb-3" style="height: 8px;">
+        <div class="progress-bar bg-success" style="width: 60%"></div>
+      </div>
+
+      <div class="mt-auto d-flex justify-content-between">
+        <a href="#" class="btn btn-outline-success btn-sm"
+           data-bs-toggle="modal"
+          data-bs-target="#donationModal5"
+        >View Details</a>
+        <a href="#" class="btn btn-success btn-sm">Donate Now</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- card 6 -->
+  <div class="col-md-4">
+  <div class="card cardd h-100">
+    <img src="cancer.webp" height="266px" class="card-img-top" alt="">
+
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title">Cancer Treatment for Mother</h5>
+
+      <p class="card-text">
+      Fatima, mother of 3, needs chemotherapy treatment urgently.
+      </p>
+
+      <div class="d-flex justify-content-between mb-1">
+        <small>Raised: Rs 425,000</small>
+        <small>Goal: Rs 600,000</small>
+      </div>
+
+      <div class="progress mb-3" style="height: 8px;">
+        <div class="progress-bar bg-success" style="width: 60%"></div>
+      </div>
+
+      <div class="mt-auto d-flex justify-content-between">
+        <a href="#" class="btn btn-outline-success btn-sm"
+           data-bs-toggle="modal"
+          data-bs-target="#donationModal6"
+        >View Details</a>
+        <a href="#" class="btn btn-success btn-sm">Donate Now</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Modal 1 -->
+ <div class="modal p-4 mb-4" id="donationModal1" tabindex="-1">
+  <div class="modal-dialog p-4">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Emergency Heart Surgery for Baby Ayesha</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <img src="baby.jpg" width="500px" class="img-fluid rounded mb-4" alt="">
+
+         <div class="d-flex justify-content-between mb-2">
+        <small>Raised: Rs 60,000</small>
+        <small>Goal: Rs 100,000</small>
+      </div>
+
+      <div class="progress mb-3" style="height: 8px;">
+        <div class="progress-bar bg-success" style="width: 60%"></div>
+      </div>
+
+
+        <h4>About This Cause</h4>
+        <p>Baby Ayesha was born with a congenital heart defect that requires immediate surgical intervention. Her family, daily wage workers from a small village near Multan, cannot afford the surgery costs. The surgery is scheduled at a leading cardiac hospital in Lahore, and the medical team is ready. Your donation can give this little angel a chance at life</p>
+
+        <div class="border rounded p-2 mb-5">
+         <ul class="list-unstyled">
+          <li><strong>Category:</strong>Emergency </li>
+          <li><strong>Name:</strong> Ayesha's Father - Muhammad Arif</li>
+          <li><strong>Contact:</strong> 03XX-XXXXXXX</li>
+          <li><strong>Status:</strong> <span class="badge bg-success">Verified</span></li>
+        </ul>
+      </div>
+
+      <div class="bg-light border rounded p-2 mb-2">
+      <h5>How to Donate</h5>
+      <p>1: Contact the beneficiary or organization directly
+        <br>
+         2: Verify the cause details before donating
+         <br>
+         3: Transfer funds through secure banking channels
+         <br>
+         4: Keep records of your donation for reference</p>
+      </div>
+
+      </div>
+     <div class="modal-footer d-flex gap-2">
+  <button type="button"
+          class="btn btn-outline-success flex-fill"
+          data-bs-dismiss="modal">
+    Close
+  </button>
+  <button type="button"
+          class="btn btn-success flex-fill">
+    Donate Now
+  </button>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+
+<!-- Modal 2 -->
+ <div class="modal p-4 mb-4" id="donationModal2" tabindex="-1">
+  <div class="modal-dialog p-4">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Education Fund for Orphaned Children</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <img src="book.jpg" class="img-fluid rounded mb-4" alt="">
+
+         <div class="d-flex justify-content-between mb-2">
+        <small>Raised: Rs 60,000</small>
+        <small>Goal: Rs 100,000</small>
+      </div>
+
+      <div class="progress mb-3" style="height: 8px;">
+        <div class="progress-bar bg-success" style="width: 60%"></div>
+      </div>
+
+
+        <h4>About This Cause</h4>
+        <p>The Al-Noor Orphanage in Karachi is home to 50 children who lost their parents. Despite their circumstances, these children are determined to study and build a better future. This fund will cover their school fees, books, uniforms, and educational supplies for an entire year. Education is their pathway to a brighter tomorrow.</p>
+
+        <div class="border rounded p-2 mb-5">
+         <ul class="list-unstyled">
+          <li><strong>Category:</strong> Education</li>
+          <li><strong>City:</strong> Karachi</li>
+          <li><strong>Contact:</strong> 03XX-XXXXXXX</li>
+          <li><strong>Status:</strong> <span class="badge bg-success">Verified</span></li>
+        </ul>
+      </div>
+
+      <div class="bg-light border rounded p-2 mb-2">
+      <h5>How to Donate</h5>
+      <p>1: Contact the beneficiary or organization directly
+        <br>
+         2: Verify the cause details before donating
+         <br>
+         3: Transfer funds through secure banking channels
+         <br>
+         4: Keep records of your donation for reference</p>
+      </div>
+
+      </div>
+     <div class="modal-footer d-flex gap-2">
+  <button type="button"
+          class="btn btn-outline-success flex-fill"
+          data-bs-dismiss="modal">
+    Close
+  </button>
+  <button type="button"
+          class="btn btn-success flex-fill">
+    Donate Now
+  </button>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+
+
+
+<!-- Modal 3 -->
+ <div class="modal p-4 mb-4" id="donationModal3" tabindex="-1">
+  <div class="modal-dialog p-4">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Flood Relief for Sindh Villages</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <img src="flood.jpg" width="500px" class="img-fluid rounded mb-4" alt="">
+
+         <div class="d-flex justify-content-between mb-2">
+        <small>Raised: Rs 60,000</small>
+        <small>Goal: Rs 100,000</small>
+      </div>
+
+      <div class="progress mb-3" style="height: 8px;">
+        <div class="progress-bar bg-success" style="width: 60%"></div>
+      </div>
+
+
+        <h4>About This Cause</h4>
+        <p>Recent floods have devastated multiple villages in interior Sindh, leaving thousands homeless and without access to clean water, food, or medical care. Our relief team is on the ground providing emergency assistance. Your donation will help us reach more families with essential supplies, temporary shelters, and medical camps.</p>
+
+        <div class="border rounded p-2 mb-5">
+         <ul class="list-unstyled">
+          <li><strong>Category:</strong>Emergency </li>
+          <li><strong>Name:</strong> Sindh Relief Foundation</li>
+          <li><strong>Contact:</strong> 03XX-XXXXXXX</li>
+          <li><strong>Status:</strong> <span class="badge bg-success">Verified</span></li>
+        </ul>
+      </div>
+
+      <div class="bg-light border rounded p-2 mb-2">
+      <h5>How to Donate</h5>
+      <p>1: Contact the beneficiary or organization directly
+        <br>
+         2: Verify the cause details before donating
+         <br>
+         3: Transfer funds through secure banking channels
+         <br>
+         4: Keep records of your donation for reference</p>
+      </div>
+
+      </div>
+     <div class="modal-footer d-flex gap-2">
+  <button type="button"
+          class="btn btn-outline-success flex-fill"
+          data-bs-dismiss="modal">
+    Close
+  </button>
+  <button type="button"
+          class="btn btn-success flex-fill">
+    Donate Now
+  </button>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<!-- Modal 4 -->
+ <div class="modal p-4 mb-4" id="donationModal4" tabindex="-1">
+  <div class="modal-dialog p-4">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Wheelchair for Disabled Veteran</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <img src="wheel chair.jpeg" width="500px" class="img-fluid rounded mb-4" alt="">
+
+         <div class="d-flex justify-content-between mb-2">
+        <small>Raised: Rs 60,000</small>
+        <small>Goal: Rs 100,000</small>
+      </div>
+
+      <div class="progress mb-3" style="height: 8px;">
+        <div class="progress-bar bg-success" style="width: 60%"></div>
+      </div>
+
+
+        <h4>About This Cause</h4>
+        <p>Havaldar (Retd.) Khalid Mehmood served our nation for 25 years before losing both legs in an IED attack. Now 58 years old, he struggles with an old manual wheelchair. An electric wheelchair will give him independence and dignity in his golden years. Let's honor his service with our support.</p>
+
+        <div class="border rounded p-2 mb-5">
+         <ul class="list-unstyled">
+          <li><strong>Category:</strong>Medical </li>
+          <li><strong>Name:</strong> Havaldar (Retd.) Khalid Mehmood</li>
+          <li><strong>Contact:</strong> 03XX-XXXXXXX</li>
+          <li><strong>Status:</strong> <span class="badge bg-success">Verified</span></li>
+        </ul>
+      </div>
+
+      <div class="bg-light border rounded p-2 mb-2">
+      <h5>How to Donate</h5>
+      <p>1: Contact the beneficiary or organization directly
+        <br>
+         2: Verify the cause details before donating
+         <br>
+         3: Transfer funds through secure banking channels
+         <br>
+         4: Keep records of your donation for reference</p>
+      </div>
+
+      </div>
+     <div class="modal-footer d-flex gap-2">
+  <button type="button"
+          class="btn btn-outline-success flex-fill"
+          data-bs-dismiss="modal">
+    Close
+  </button>
+  <button type="button"
+          class="btn btn-success flex-fill">
+    Donate Now
+  </button>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<!-- Modal 5 -->
+ <div class="modal p-4 mb-4" id="donationModal5" tabindex="-1">
+  <div class="modal-dialog p-4">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Clean Water Well for Thar Village</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <img src="water.jpeg"  class="img-fluid rounded mb-4" alt="">
+
+         <div class="d-flex justify-content-between mb-2">
+        <small>Raised: Rs 60,000</small>
+        <small>Goal: Rs 100,000</small>
+      </div>
+
+      <div class="progress mb-3" style="height: 8px;">
+        <div class="progress-bar bg-success" style="width: 60%"></div>
+      </div>
+
+
+        <h4>About This Cause</h4>
+        <p>The village of Mithi in Tharparkar has no access to clean drinking water. Women and children walk miles every day to fetch water from contaminated sources. A deep bore well will provide clean, safe water to over 200 families. This is a sustainable solution that will serve the community for generations.</p>
+
+        <div class="border rounded p-2 mb-5">
+         <ul class="list-unstyled">
+          <li><strong>Category:</strong>Infrastructure </li>
+          <li><strong>Name:</strong>Thar Development Trust</li>
+          <li><strong>Contact:</strong> 03XX-XXXXXXX</li>
+          <li><strong>Status:</strong> <span class="badge bg-success">Verified</span></li>
+        </ul>
+      </div>
+
+      <div class="bg-light border rounded p-2 mb-2">
+      <h5>How to Donate</h5>
+      <p>1: Contact the beneficiary or organization directly
+        <br>
+         2: Verify the cause details before donating
+         <br>
+         3: Transfer funds through secure banking channels
+         <br>
+         4: Keep records of your donation for reference</p>
+      </div>
+
+      </div>
+     <div class="modal-footer d-flex gap-2">
+  <button type="button"
+          class="btn btn-outline-success flex-fill"
+          data-bs-dismiss="modal">
+    Close
+  </button>
+  <button type="button"
+          class="btn btn-success flex-fill">
+    Donate Now
+  </button>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<!-- Modal 6 -->
+ <div class="modal p-4 mb-4" id="donationModal6" tabindex="-1">
+  <div class="modal-dialog p-4">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Flood Relief for Sindh Villages</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <img src="cancer.webp"  class="img-fluid rounded mb-4" alt="">
+
+         <div class="d-flex justify-content-between mb-2">
+        <small>Raised: Rs 60,000</small>
+        <small>Goal: Rs 100,000</small>
+      </div>
+
+      <div class="progress mb-3" style="height: 8px;">
+        <div class="progress-bar bg-success" style="width: 60%"></div>
+      </div>
+
+
+        <h4>About This Cause</h4>
+        <p>Fatima Bibi, a 34-year-old mother of three young children, was recently diagnosed with breast cancer. Her husband works as a security guard with minimal income. The chemotherapy and related treatments are beyond their means. Your donation can help save a mother's life and keep her family together.</p>
+
+        <div class="border rounded p-2 mb-5">
+         <ul class="list-unstyled">
+          <li><strong>Category:</strong>Medical </li>
+          <li><strong>Name:</strong>Fatima Bibi</li>
+          <li><strong>Contact:</strong> 03XX-XXXXXXX</li>
+          <li><strong>Status:</strong> <span class="badge bg-success">Verified</span></li>
+        </ul>
+      </div>
+
+      <div class="bg-light border rounded p-2 mb-2">
+      <h5>How to Donate</h5>
+      <p>1: Contact the beneficiary or organization directly
+        <br>
+         2: Verify the cause details before donating
+         <br>
+         3: Transfer funds through secure banking channels
+         <br>
+         4: Keep records of your donation for reference</p>
+      </div>
+
+      </div>
+     <div class="modal-footer d-flex gap-2">
+  <button type="button"
+          class="btn btn-outline-success flex-fill"
+          data-bs-dismiss="modal">
+    Close
+  </button>
+  <button type="button"
+          class="btn btn-success flex-fill">
+    Donate Now
+  </button>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+
+
+
+
+</div>
+
+  
+<!-- footer -->
+<footer class="footer-section">
+  <div class="container py-5">
+    <div class="row gy-4">
+
+      <!-- LOGO & ABOUT -->
+      <div class="col-md-3">
+        <img src="logo.png" alt="HopeGive Logo" class="footer-logo-img">
+
+        <p class="footer-text">
+          Connecting generous hearts with those in need. Every contribution makes a difference.
+        </p>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-md-3">
+        <h6 class="footer-title">Quick Links</h6>
+        <ul class="footer-links list-unstyled">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Donation Causes</a></li>
+          <li><a href="#">Needy Contacts</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-md-3">
+        <h6 class="footer-title">Contact Us</h6>
+        <ul class="footer-contact list-unstyled">
+          <li><i class="bi bi-envelope"></i> info@hopegive.org</li>
+          <li><i class="bi bi-telephone"></i> +92 324-9351851</li>
+          <li><i class="bi bi-geo-alt"></i> Lahore, Pakistan</li>
+        </ul>
+      </div>
+
+      <!-- DEVELOPED BY -->
+      <div class="col-md-3">
+        <h6 class="footer-title">Developed By</h6>
+        <div class="dev-box">
+          <h6 class="text-success mb-1">U Devs</h6>
+          <p class="mb-0">
+            Building innovative solutions for a better tomorrow.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="footer-line">
+
+    <p class="footer-bottom text-center mb-0">
+      © 2026 HopeGive. All rights reserved.
+      Developed with <span class="text-danger">♥</span> by
+      <span class="text-success">U Devs</span>
+    </p>
+  </div>
+</footer>
+
+
+
+</body>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
